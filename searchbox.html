@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Responsive Search Box | CodingLab </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <style>
+            /* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+body{
+  background: #3e2093;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.box{
+  height: 60px;
+  max-width: 60px;
+  width: 100%;
+  background: #fff;
+  border-radius: 50px;
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  transition: all 0.4s ease;
+}
+.box:hover{
+  max-width: 400px;
+}
+.box input{
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+  background: #fff;
+  outline: none;
+  border: none;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+.box:hover input{
+  opacity: 1;
+}
+.box a{
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  height: 50px;
+  width: 50px;
+  background: #3e2093;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  transition: all 0.4s ease;
+}
+.box:hover a{
+  background: #2a1170;
+}
+         </style>
+   
+    </head>
+<body>
+  <div class="box">
+    <input type="text" placeholder="Search...">
+    <a href="#">
+      <i class="fas fa-search"></i>
+    </a>
+  </div>
+</body>
+</html>
